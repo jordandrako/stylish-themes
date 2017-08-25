@@ -1,0 +1,498 @@
+/* LeadConduit */
+
+g.highcharts-axis-labels text {
+  color: var(--stylish-brightwhite) !important;
+  fill: var(--stylish-brightwhite) !important;
+  text-shadow: none !important;
+}
+path.highcharts-point.highcharts-color-0 {
+  fill: var(--stylish-green);
+}
+path.highcharts-point.highcharts-color-1 {
+  fill: var(--stylish-red);
+}
+body {
+  background: var(--stylish-dark);
+  color: var(--stylish-white);
+}
+h2,
+h3 {
+  color: var(--stylish-red);
+}
+a,
+.link,
+.view.events .events-table.outcomes table tr.outcomes-link {
+  color: var(--stylish-blue);
+}
+a:hover,
+.link:hover,
+.view.events .events-table.outcomes table tr.outcomes-link:hover,
+a:active,
+.link:active,
+.view.events .events-table.outcomes table tr.outcomes-link:active {
+  color: var(--stylish-brightwhite);
+}
+.app,
+.view.flow-edit,
+.view.library,
+.view.batches,
+.view.events .events-graph,
+.view.flow-source-docs .posting-instructions,
+section[ui-view] {
+  background-color: var(--stylish-black);
+}
+.status.ok,
+.status.success,
+.status.enabled {
+  color: var(--stylish-green);
+}
+.status.error {
+  color: var(--stylish-yellow);
+}
+.status.failure {
+  color: var(--stylish-red);
+}
+table {
+  background: var(--stylish-black);
+}
+table thead {
+  border-bottom: 1px solid var(--stylish-brightblack);
+}
+table tbody tr {
+  border-bottom: 1px solid var(--stylish-brightblack);
+}
+.module {
+  background: var(--stylish-black);
+  border: 1px solid var(--stylish-brightblack);
+}
+.module > .title {
+  background: var(--stylish-black);
+  border-bottom: 1px solid var(--stylish-brightblack);
+  color: var(--stylish-brightred);
+}
+.button,
+button {
+  background: var(--stylish-brightblack);
+  border: 1px solid var(--stylish-brightblack);
+  color: var(--stylish-black);
+}
+.button.brand-primary-dark,
+button.brand-primary-dark {
+  background: var(--stylish-medblack);
+  color: var(--stylish-brightwhite);
+  border-color: var(--stylish-black);
+}
+.button.brand-primary-dark:hover,
+button.brand-primary-dark:hover {
+  background: var(--stylish-black) !important;
+}
+.button.primary,
+button.primary {
+  background: var(--stylish-blue);
+  background-image: -webkit-linear-gradient(
+    rgba(255, 255, 255, .1),
+    rgba(0, 0, 0, .3)
+  );
+  background-image: -moz-linear-gradient(
+    rgba(255, 255, 255, .1),
+    rgba(0, 0, 0, .3)
+  );
+  background-image: -o-linear-gradient(
+    rgba(255, 255, 255, .1),
+    rgba(0, 0, 0, .3)
+  );
+  background-image: -ms-linear-gradient(
+    rgba(255, 255, 255, .1),
+    rgba(0, 0, 0, .3)
+  );
+  background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, .3));
+  border: 1px solid var(--stylish-blue);
+  border-bottom-color: var(--stylish-blue);
+  color: var(--stylish-brightwhite);
+}
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+select,
+textarea {
+  color: var(--stylish-black);
+  background-color: var(--stylish-white);
+  border: 1px solid var(--stylish-brightblack);
+}
+input[type=checkbox].toggle + label:before {
+  background-color: var(--stylish-brightblack);
+}
+input[type=checkbox].toggle + label:after {
+  background: var(--stylish-red);
+}
+input[type=checkbox].toggle:checked + label:after {
+  background: var(--stylish-green);
+}
+input::placeholder {
+  color: var(--stylish-medblack);
+}
+.search-input:before {
+  color: var(--stylish-black);
+}
+header.main {
+  background: var(--stylish-darkblack);
+  color: var(--stylish-white);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+}
+header.main nav ul li a,
+header.main nav ul li .dropdown-title {
+  color: var(--stylish-brightwhite);
+}
+header.main nav ul li a:hover,
+header.main nav ul li .dropdown-title:hover {
+  color: var(--stylish-brightwhite);
+  text-decoration: underline;
+}
+header.main nav ul li ul {
+  background-color: var(--stylish-black);
+  border-top: 2px solid var(--stylish-brightblack);
+}
+header.main nav ul li ul li:hover {
+  background: var(--stylish-medblack);
+}
+header.main nav ul li a.active,
+header.main nav ul li .dropdown-title.active {
+  color: var(--stylish-black);
+}
+header.main nav ul li.active .dropdown-title,
+header.main nav ul li:hover .dropdown-title {
+  color: var(--stylish-black);
+}
+header.main nav ul li a:hover,
+header.main nav ul li .dropdown-title:hover,
+header.main nav ul li a.active,
+header.main nav ul li .dropdown-title.active {
+  color: var(--stylish-white);
+}
+th {
+  color: var(--stylish-brightwhite);
+}
+.breadcrumbs {
+  background: var(--stylish-darkblack);
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs ul li:last-child a {
+  color: var(--stylish-brightwhite);
+}
+.breadcrumbs ul li:after {
+  background: transparent;
+}
+section.main .view .sidebar {
+  background: var(--stylish-black);
+  border-right: 1px solid var(--stylish-medblack);
+}
+.date-selector.single-line {
+  background: transparent;
+}
+.view.flow > .content .funnel ul li .bar-container {
+  background-color: var(--stylish-blue);
+  color: var(--stylish-brightwhite);
+}
+.view.flow > .content .funnel ul li .bar-container .percent {
+  background-color: var(--stylish-white);
+}
+g.highcharts-series.highcharts-series-0 rect {
+  fill: var(--stylish-green);
+  fill-opacity: .3;
+}
+g.highcharts-series.highcharts-series-1 rect {
+  fill: var(--stylish-red);
+  fill-opacity: .3;
+}
+g.highcharts-series rect:hover {
+  fill-opacity: 1 !important;
+}
+table.fixed-header-table tbody:after {
+  background-image: -webkit-linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, .3) 100%
+  );
+  background-image: -moz-linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, .3) 100%
+  );
+  background-image: -o-linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, .3) 100%
+  );
+  background-image: -ms-linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, .3) 100%
+  );
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, .3) 100%
+  );
+}
+@media screen and (max-width: 985px) {
+  .app.mobile-wrapper {
+    background-color: var(--stylish-black);
+  }
+}
+.sub-page-nav {
+  background-color: var(--stylish-medblack);
+}
+.sub-page-nav .sub-page-nav-item.active {
+  background-color: var(--stylish-red);
+}
+.view.flow-edit-steps .step {
+  background: var(--stylish-black);
+  border: 1px solid var(--stylish-medblack);
+}
+.view.flow-edit-steps .step:after {
+  background: var(--stylish-black);
+  border-bottom: 1px solid var(--stylish-medblack);
+  border-right: 1px solid var(--stylish-medblack);
+}
+.view.flow-edit-steps .step .summary {
+  color: var(--stylish-white);
+}
+.view.flow-edit-steps .step header {
+  background-color: var(--stylish-white);
+  border: 15px solid var(--stylish-white);
+  color: var(--stylish-black);
+}
+.view.flow-edit-steps .step .controls {
+  color: var(--stylish-black);
+}
+.view.flow-edit-steps .step .avg-duration {
+  color: var(--stylish-black);
+  text-shadow: 0 1px 0 var(--stylish-brightblack);
+}
+.view.flow-edit-steps .step .status-block {
+  background-color: var(--stylish-white);
+}
+.view.flow-edit-steps .step .status-block.ok {
+  background-color: var(--stylish-green);
+  color: var(--stylish-white);
+}
+.view.flow-edit-steps .step.success {
+  background-color: var(--stylish-white);
+}
+.view.flow-edit-steps .step.success header span {
+  color: var(--stylish-black);
+}
+.add-step-container .add-step-item {
+  border: 1px solid var(--stylish-brightblack);
+}
+.add-step-container .add-step-item .header {
+  background-color: var(--stylish-black);
+}
+.add-step-container .add-step-item:hover .header {
+  background-color: var(--stylish-active);
+}
+.step-type.filter:before {
+  background-color: var(--stylish-red);
+}
+.step-type.enhancement:before {
+  background-color: var(--stylish-yellow);
+}
+.step-type.delivery:before {
+  background-color: var(--stylish-cyan);
+}
+.global-config-inbound {
+  background-color: var(--stylish-medblack);
+}
+.global-config-inbound td {
+  color: var(--stylish-white);
+}
+.field-name {
+  background-color: var(--stylish-blue);
+  color: var(--stylish-brightwhite);
+}
+.field-name.standard {
+  background-color: var(--stylish-cyan);
+}
+.deprecated {
+  background: var(--stylish-red);
+  color: var(--stylish-brightwhite);
+}
+.deprecated:after {
+  border-right: 6px solid var(--stylish-red);
+}
+.drag-handle {
+  background: var(--stylish-white);
+}
+.help-tip {
+  background: var(--stylish-green);
+  color: var(--stylish-black);
+}
+.stats .event-count ul li.success {
+  color: var(--stylish-green);
+}
+.stats .event-count ul li.failure {
+  color: var(--stylish-red);
+}
+.stats .event-count ul li.error {
+  color: var(--stylish-yellow);
+}
+.stats .event-count figure figcaption {
+  color: var(--stylish-green);
+}
+table td.used-icon:before {
+  background-color: var(--stylish-medblack);
+}
+table td.used-icon.active:before {
+  background-color: var(--stylish-green);
+}
+.tabs .tab {
+  border: 1px solid var(--stylish-brightblack);
+  background: var(--stylish-medblack);
+}
+.tabs .tab.active {
+  background: var(--stylish-blue);
+  border-top: 1px solid var(--stylish-cyan);
+  border-bottom-color: var(--stylish-brightblack);
+  -webkit-box-shadow: inset 0 2px 0 var(--stylish-cyan);
+  box-shadow: inset 0 2px 0 var(--stylish-cyan);
+  color: var(--stylish-black);
+}
+.view.batches button.more {
+  background: var(--stylish-active);
+}
+.view.events .events-table-options {
+  background: var(--stylish-darkblack);
+}
+.view.events .events-table .header-background {
+  background: var(--stylish-medblack);
+  background: -webkit-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-medblack)
+  );
+  background: -moz-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-medblack)
+  );
+  background: -o-linear-gradient(var(--stylish-black), var(--stylish-medblack));
+  background: -ms-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-medblack)
+  );
+  background: linear-gradient(var(--stylish-black), var(--stylish-medblack));
+}
+.view.events .new-events {
+  border-bottom: 1px solid var(--stylish-brightblack);
+}
+.view.events .load-more-events,
+.view.events .new-events {
+  background: var(--stylish-black);
+  background-image: -webkit-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-black)
+  );
+  background-image: -moz-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-black)
+  );
+  background-image: -o-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-black)
+  );
+  background-image: -ms-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-black)
+  );
+  background-image: linear-gradient(var(--stylish-black), var(--stylish-black));
+  color: var(--stylish-blue);
+  text-shadow: 0 1px 0 var(--stylish-darkblack);
+}
+table.basic {
+  background: var(--stylish-black);
+  border-bottom: 1px solid var(--stylish-brightblack);
+}
+table.basic tbody tr:nth-child(even) {
+  background: var(--stylish-active);
+}
+section.main .view .sidebar .mask {
+  background-image: -webkit-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-darkblack)
+  );
+  background-image: -moz-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-darkblack)
+  );
+  background-image: -o-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-darkblack)
+  );
+  background-image: -ms-linear-gradient(
+    var(--stylish-black),
+    var(--stylish-darkblack)
+  );
+  background-image: linear-gradient(
+    var(--stylish-black),
+    var(--stylish-darkblack)
+  );
+}
+.view.reports-detail table tr.failure {
+  color: var(--stylish-red);
+}
+.modal-content {
+  background-color: var(--stylish-medblack);
+}
+.progress-indicator ul li.active {
+  background-color: var(--stylish-green);
+}
+.progress-indicator ul li {
+  background-color: var(--stylish-brightblack);
+}
+.select2-container-multi .select2-choices {
+  border: 1px solid var(--stylish-brightblack);
+  border-radius: 4px;
+  background-color: var(--stylish-darkblack);
+  background-image: -webkit-linear-gradient(
+    var(--stylish-black) 1%,
+    var(--stylish-darkblack) 15%
+  );
+  background-image: -moz-linear-gradient(
+    var(--stylish-black) 1%,
+    var(--stylish-darkblack) 15%
+  );
+  background-image: -o-linear-gradient(
+    var(--stylish-black) 1%,
+    var(--stylish-darkblack) 15%
+  );
+  background-image: -ms-linear-gradient(
+    var(--stylish-black) 1%,
+    var(--stylish-darkblack) 15%
+  );
+  background-image: linear-gradient(
+    var(--stylish-black) 1%,
+    var(--stylish-darkblack) 15%
+  );
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+  color: var(--stylish-white);
+}
+.multi-field .mapping-tag {
+  background: var(--stylish-cyan);
+}
+.accordion .accordion-section.expanded header {
+  background-color: var(--stylish-medblack);
+}
+.accordion .accordion-section.expanded header {
+  border-bottom: 1px solid var(--stylish-brightblack);
+}
+.accordion .accordion-section header {
+  color: var(--stylish-white);
+}
+.view.flow-source-docs table th,
+.view.flow-source-docs table td {
+  border: 1px solid var(--stylish-brightblack);
+}
+.view.flow-source-docs .acceptance-criteria > div > ul.rule-set-view {
+  border: 1px solid var(--stylish-brightblack);
+}
+.rule-set-view .rule-set-op {
+  color: var(--stylish-red);
+}
+.app-loading {
+  background: var(--stylish-black);
+}

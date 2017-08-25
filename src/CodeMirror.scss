@@ -1,0 +1,101 @@
+/* CodeMirror */
+#stylish-edit,
+#stylish-manage {
+  background: var(--stylish-darkblack);
+  color: var(--stylish-white);
+
+  #header {
+    background: var(--stylish-black);
+    color: var(--stylish-white);
+    border-right: 1px solid var(--stylish-brightblack);
+  }
+
+  #header h1 {
+    color: var(--stylish-brightwhite);
+  }
+
+  #lint table {
+    color: var(--stylish-white);
+  }
+}
+
+.CodeMirror {
+  color: var(--stylish-white) !important;
+  background: var(--stylish-black) !important;
+  background-color: var(--stylish-black) !important;
+  border-color: var(--stylish-medblack) !important;
+
+  pre {
+    font-size: 14px;
+    font-family: 'fira code retina', 'fira code', 'input mono', monospace;
+    line-height: 1.5;
+    color: var(--stylish-white) !important;
+  }
+  .CodeMirror-activeline-background {
+    background: var(--stylish-active) !important;
+  }
+
+  .CodeMirror-matchingbracket {
+    color: var(--stylish-green) !important;
+    border: 1px solid rgba(255, 255, 255, .3) !important;
+  }
+
+  .CodeMirror-gutter,
+  .CodeMirror-gutter-wrapper,
+  .CodeMirror-scroll,
+  .CodeMirror-linenumbers,
+  .CodeMirror-linenumber,
+  .CodeMirror-gutters {
+    background: var(--stylish-black) !important;
+    background-color: var(--stylish-black) !important;
+    border-color: var(--stylish-medblack) !important;
+  }
+
+  .CodeMirror-linenumber {
+    color: var(--stylish-medblack) !important;
+  }
+
+  .cm-comment {
+    color: var(--stylish-brightblack) !important;
+  }
+
+  .cm-variable,
+  .cm-variable-2,
+  .cm-def,
+  .cm-tag {
+    color: var(--stylish-red) !important;
+  }
+
+  .cm-property {
+    color: var(--stylish-blue) !important;
+  }
+
+  .cm-keyword {
+    color: var(--stylish-magenta) !important;
+  }
+
+  .cm-string {
+    color: var(--stylish-green) !important;
+  }
+
+  .cm-number,
+  .cm-atom,
+  .cm-attribute,
+  .cm-qualifier,
+  .cm-variable-3 {
+    color: var(--stylish-yellow) !important;
+  }
+
+  .cm-operator,
+  .cm-tag.cm-bracket {
+    color: var(--stylish-white) !important;
+  }
+
+  .cm-builtin {
+    color: var(--stylish-cyan) !important;
+  }
+
+  .cm-comment {
+    font-style: oblique;
+  }
+}

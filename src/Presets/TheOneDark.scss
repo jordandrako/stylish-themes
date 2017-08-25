@@ -1,0 +1,21 @@
+:root {
+  --stylish-active: #383e4a;
+  --stylish-darkblack: #21252b;
+  --stylish-black: #282c34;
+  --stylish-medblack: #495162;
+  --stylish-brightblack: #848d9f;
+  --stylish-blue: #61afef;
+  --stylish-cyan: #56b6c2;
+  --stylish-red: #e06c75;
+  --stylish-magenta: #c678dd;
+  --stylish-green: #98c379;
+  --stylish-yellow: #d19a66;
+  --stylish-white: #abb2bf;
+  --stylish-brightwhite: #ffffff;
+
+  --stylish-text: var(--stylish-white);
+  --stylish-text-hover: var(--stylish-brightwhite);
+  --stylish-contentbg: var(--stylish-black);
+  --stylish-pagebg: var(--stylish-darkblack);
+  --stylish-border: var(--stylish-brightblack);
+}

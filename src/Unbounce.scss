@@ -1,0 +1,693 @@
+/* App styles */
+
+.ellipsis-button {
+  max-width: none;
+}
+
+/* Colors*/
+// Global
+body {
+  color: var(--stylish-text) !important;
+}
+html,
+body,
+#root-container-editor {
+  color: var(--stylish-text);
+  background: var(--stylish-contentbg);
+}
+#sidemenu {
+  #context-menu,
+  #primary-nav {
+    background-color: var(--stylish-contentbg);
+    border-right: 1px solid var(--stylish-border);
+    z-index: 1000;
+  }
+}
+
+#main-container {
+  background-color: var(--stylish-pagebg);
+}
+
+a {
+  color: var(--stylish-blue);
+  &:hover {
+    color: var(--stylish-blue);
+    text-decoration: underline;
+  }
+}
+
+// elements
+a.btn.green,
+button.btn.green,
+.green.file-wrapper,
+input[type="submit"].btn.green {
+  background-color: var(--stylish-green);
+}
+
+a.btn.dark,
+button.btn.dark,
+.dark.file-wrapper,
+input[type="submit"].btn.dark,
+.recent-blog-posts .visit-blog a,
+#sidebar-new .gs-more-topics a {
+  background: var(--stylish-medblack);
+  color: var(--stylish-text);
+  span {
+    color: var(--stylish-text);
+  }
+  &:active,
+  &:hover {
+    background: var(--stylish-brightblack);
+    color: var(--stylish-text-hover);
+    span {
+      color: var(--stylish-text-hover);
+    }
+  }
+}
+
+.btn-gray.cssV2,
+a.comp_btn-gray,
+.comp_btn-gray {
+  background-color: var(--stylish-medblack);
+  border: 2px solid transparent;
+  color: var(--stylish-text);
+}
+
+a.btn.light,
+button.btn.light,
+.light.file-wrapper,
+.file-selected .file-wrapper,
+input[type="submit"].btn.light {
+  background-color: var(--stylish-brightblack);
+  color: var(--stylish-black);
+}
+
+a.btn-arrow {
+  background: var(--stylish-medblack);
+  &:before {
+    background: var(--stylish-medblack);
+  }
+  &:hover {
+    background: var(--stylish-brightblack);
+
+    &:before {
+      background: var(--stylish-brightblack);
+    }
+  }
+}
+
+.meter span {
+  &.usage {
+    background: var(--stylish-blue);
+
+    &.nearly-full {
+      background: var(--stylish-yellow);
+    }
+
+    .value {
+      color: var(--stylish-brightwhite);
+    }
+  }
+  &.value {
+    color: var(--stylish-brightwhite);
+  }
+}
+
+.form-control._search-input {
+  background-color: var(--stylish-medblack);
+  border: 1px solid var(--stylish-medblack);
+  color: var(--stylish-text);
+}
+.comp_btn-gray._search-btn {
+  border-radius: 0 6px 6px 0;
+  padding: 7px 12px 5px;
+  background-color: var(--stylish-brightblack);
+  line,
+  circle {
+    stroke: var(--stylish-brightwhite) !important;
+  }
+}
+
+.item .flag {
+  color: var(--stylish-brightwhite);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.flag {
+  &.administrator {
+    background-color: var(--stylish-blue);
+  }
+  &.author {
+    background-color: var(--stylish-cyan);
+  }
+  &.owner {
+    background-color: var(--stylish-green);
+  }
+}
+
+div.standard-form ul.radio-checkbox-list {
+  label {
+    color: var(--stylish-text);
+    background: var(--stylish-contentbg);
+  }
+  li.radio-checkbox-selected {
+    label {
+      color: var(--stylish-blue);
+      background: var(--stylish-active);
+      border-color: var(--stylish-border);
+    }
+  }
+}
+
+// Page View
+header {
+  &.primary-header {
+    background: var(--stylish-pagebg);
+    border-bottom: 1px solid var(--stylish-border);
+
+    &.nav-bar {
+      background: var(--stylish-pagebg);
+
+      span.label {
+        a {
+          color: var(--stylish-text);
+        }
+      }
+    }
+
+    &.divider-left {
+      border-left: 1px solid var(--stylish-border);
+    }
+
+    nav.dropdown {
+      width: 260px;
+      height: 56px;
+      float: left;
+      background: var(--stylish-pagebg);
+    }
+  }
+}
+
+#primary-nav > ul {
+  a {
+    color: var(--stylish-text);
+  }
+
+  > li.expanded {
+    background: var(--stylish-contentbg);
+
+    h3 a.current {
+      color: var(--stylish-blue);
+
+      span.count {
+        border-color: var(--stylish-blue);
+      }
+    }
+  }
+
+  > li:first-child {
+    border-top: 1px solid var(--stylish-border);
+  }
+
+  > li ul {
+    background: linear-gradient(
+        var(--stylish-contentbg) 30%,
+        rgba(63, 63, 63, 0)
+      ),
+      linear-gradient(rgba(63, 63, 63, 0), var(--stylish-contentbg) 70%) 0 100%,
+      radial-gradient(
+        farthest-side at 50% 0,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+      ),
+      radial-gradient(
+          farthest-side at 50% 100%,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0)
+        )
+        0 100%;
+    background-color: var(--stylish-contentbg);
+  }
+
+  > li ul li.sub-item {
+    a:hover {
+      color: var(--stylish-text-hover);
+    }
+
+    a.current {
+      color: var(--stylish-blue);
+      span.count {
+        border-color: var(--stylish-blue);
+      }
+    }
+  }
+
+  p.add-sub-item a {
+    color: var(--stylish-text);
+  }
+}
+
+#primary-nav-embeddable-ctas .item-link.current .embeddable-cta-svg-icon,
+#primary-nav-embeddable-ctas .item-link:active .embeddable-cta-svg-icon {
+  fill: var(--stylish-blue);
+}
+
+#section-content {
+  background: var(--stylish-contentbg);
+
+  #toolbar-controls {
+    background: var(--stylish-contentbg);
+  }
+}
+
+#sidebar-new {
+  color: var(--stylish-text);
+  background-color: var(--stylish-contentbg);
+
+  #dashboard-traffic-usage,
+  #dashboard-leads-export,
+  #recent-blog-posts {
+    background: var(--stylish-active);
+  }
+  .traffic-usage a.btn {
+    color: var(--stylish-text);
+    &:hover {
+      color: var(--stylish-text-hover);
+    }
+  }
+  a:not([class~='btn']) {
+    color: var(--stylish-text);
+    &:hover {
+      color: var(--stylish-text-hover);
+    }
+  }
+}
+.published-convertables-meter-cell .subtitle {
+  color: var(--stylish-text);
+}
+
+#primary-nav-pages ul.scrollable {
+  border: 1px solid var(--stylish-border);
+}
+
+.comp_page-header {
+  background-color: var(--stylish-contentbg);
+
+  .comp_title {
+    color: var(--stylish-red);
+  }
+}
+
+.comp_filter-bar {
+  background-color: var(--stylish-contentbg);
+}
+
+.comp_select-tag {
+  border: 1px solid var(--stylish-border);
+  background: url(/app_assets/legacy/ui/dropdown-notch-8462a4d….png) right 10px
+    center no-repeat var(--stylish-pagebg);
+  color: var(--stylish-text);
+}
+
+.comp_page-list-item {
+  background: var(--stylish-contentbg);
+  border: 1px solid var(--stylish-border);
+  &.published {
+    border-left: 5px solid var(--stylish-blue);
+  }
+  &.unpublished {
+    border-left: 5px solid var(--stylish-border);
+  }
+}
+
+.item .page-stats,
+.comp_page-list-item .comp_page-stats {
+  background-color: var(--stylish-contentbg);
+
+  li {
+    &:after {
+      background-color: var(--stylish-text);
+    }
+  }
+}
+.comp_page-list-item .comp_sub-title {
+  color: var(--stylish-text);
+}
+
+.item .title,
+.item .comp_title,
+.comp_list-item .title,
+.comp_list-item .comp_title,
+.comp_page-list-item .title,
+.comp_page-list-item .comp_title {
+  color: var(--stylish-text-hover);
+}
+
+.page-blocks {
+  ul.pages {
+    background: transparent;
+  }
+
+  .pagination {
+    a {
+      color: var(--stylish-black);
+      background: var(--stylish-brightblack) !important;
+      text-shadow: 1px 1px var(--stylish-medblack);
+    }
+
+    .current {
+      color: var(--stylish-text-hover);
+      text-shadow: 1px 1px var(--stylish-border);
+      background: var(--stylish-medblack);
+      background-image: -webkit-gradient(
+        linear,
+        50% 0%,
+        50% 100%,
+        color-stop(0%, var(--stylish-medblack)),
+        color-stop(100%, var(--stylish-brightblack))
+      );
+      background-image: -webkit-linear-gradient(
+        var(--stylish-medblack),
+        var(--stylish-brightblack)
+      );
+      background-image: linear-gradient(
+        var(--stylish-medblack),
+        var(--stylish-brightblack)
+      );
+      box-shadow: inset 1px 1px 2px var(--stylish-border);
+    }
+  }
+  .pagination.bottom,
+  .content-scrollable.with-pagination + .pagination.bottom {
+    background: var(--stylish-contentbg);
+  }
+}
+
+.page-blocks-toolbar,
+#section-titlebar {
+  background: var(--stylish-contentbg);
+  h2 {
+    color: var(--stylish-red);
+    span {
+      color: var(--stylish-text);
+    }
+  }
+}
+
+.content-scrollable {
+  background: var(--stylish-contentbg);
+
+  > p {
+    color: var(--stylish-text);
+  }
+}
+
+.item {
+  background-color: var(--stylish-contentbg);
+  border: 1px solid var(--stylish-border);
+  .title {
+    color: var(--stylish-text-hover);
+  }
+  .sub-title {
+    color: var(--stylish-text);
+  }
+}
+
+.success h3,
+.success h4,
+.success.color-text,
+.status.success,
+.green-text {
+  color: var(--stylish-green);
+}
+
+.status.success {
+  border: 1px solid var(--stylish-green);
+}
+
+.wrapper___12hhn,
+.container___3OCtl,
+.wrapper___4rCDL {
+  background: var(--stylish-contentbg);
+  border: 1px solid var(--stylish-border);
+
+  &.published {
+    border-left: 5px solid var(--stylish-blue);
+  }
+
+  &:hover {
+    background: var(--stylish-contentbg);
+  }
+  a,
+  div {
+    color: var(--stylish-text);
+  }
+}
+
+.badge___L1_TR.overlay___2paPX {
+  background-color: var(--stylish-blue);
+  color: var(--stylish-contentbg);
+}
+
+.badge___L1_TR.stickyBar___5TkuJ {
+  background-color: var(--stylish-brightblack);
+  color: var(--stylish-contentbg);
+}
+
+.badge___L1_TR.stickyBar___5TkuJ {
+  background-color: var(--stylish-cyan);
+}
+
+.title___Qo1Em {
+  color: var(--stylish-red);
+}
+
+.two-columns dt,
+.two-columns.data-list dd,
+.dynamic-text-dialog .data-list.formContainer dd,
+.two-columns.data-list .dynamic-text-dialog .formContainer .text,
+.dynamic-text-dialog .formContainer .two-columns.data-list .text,
+.dynamic-text-dialog .data-list.formContainer .text {
+  color: var(--stylish-text);
+
+  a:not([class~='btn']) {
+    color: var(--stylish-blue);
+  }
+}
+
+div.empty-list-with-actions h3 {
+  color: var(--stylish-yellow);
+}
+
+ul.list-with-actions > li {
+  background: var(--stylish-contentbg);
+  border: 1px solid var(--stylish-border);
+
+  span.heading {
+    color: var(--stylish-text-hover);
+  }
+  span.sub-heading {
+    color: var(--stylish-text);
+  }
+}
+
+.full-width-form {
+  color: var(--stylish-text);
+  text-shadow: none;
+}
+
+#section-content footer {
+  background: var(--stylish-contentbg);
+}
+
+.script-manager.script-index ul.list-with-actions > li span.heading {
+  color: var(--stylish-text-hover);
+}
+
+// Page overview
+.page-url {
+  background: var(--stylish-contentbg);
+  border-bottom: 1px solid var(--stylish-border);
+}
+
+.stats-and-notes {
+  .stats .stat {
+    color: var(--stylish-text);
+    em,
+    strong {
+      color: inherit;
+    }
+  }
+  .page-notes {
+    color: var(--stylish-text);
+    text-shadow: none;
+    .meta {
+      color: var(--stylish-blue);
+      text-shadow: none;
+    }
+  }
+}
+
+.component {
+  border: 1px solid var(--stylish-border);
+  background: var(--stylish-contentbg);
+  .component-heading {
+    background-color: var(--stylish-active);
+    h2 {
+      color: var(--stylish-text-hover);
+    }
+  }
+}
+
+table.variants-set {
+  border-bottom: none;
+  border-top: 1px solid var(--stylish-border);
+
+  thead.variants-heading {
+    box-shadow: none;
+    background: var(--stylish-contentbg);
+    border-top: 1px solid var(--stylish-border);
+
+    th {
+      color: var(--stylish-text);
+    }
+  }
+
+  tbody.page-variants {
+    border-bottom: none;
+    border-top: 1px solid var(--stylish-border);
+
+    tr {
+      background: var(--stylish-contentbg);
+
+      &.testing {
+        background: var(--stylish-contentbg);
+      }
+
+      &:last-child {
+        border-bottom: none;
+        border-top: 1px solid var(--stylish-border);
+      }
+
+      td.blank {
+        background: var(--stylish-contentbg);
+      }
+
+      td.variant-name {
+        strong.name {
+          color: var(--stylish-text-hover);
+        }
+        span.name-and-date {
+          color: var(--stylish-text);
+
+          small {
+            color: inherit;
+          }
+        }
+      }
+
+      td.variant-conversion-rate span.delta.down {
+        color: var(--stylish-red);
+        background-color: var(--stylish-active);
+      }
+    }
+  }
+}
+
+.jqplot-target {
+  color: var(--stylish-text);
+}
+
+.App__header--3BaNC {
+  background-color: var(--stylish-active);
+}
+
+.App__headerTitle--1W76r {
+  color: var(--stylish-text-hover);
+}
+
+.Button__button--3a1eO {
+  background: var(--stylish-contentbg);
+  border: solid 1px var(--stylish-border);
+
+  &:hover {
+    background: var(--stylish-active);
+  }
+}
+
+.Button__link--2Z0yR {
+  color: var(--stylish-text);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--stylish-blue);
+  }
+}
+
+.WebhookButton_buttonConfigured__2PqEM,
+.content-box ul.integrate-buttons li div.name,
+.content-box ul.download-buttons li a:hover,
+.content-box ul.download-buttons li span:hover {
+  background-color: var(--stylish-contentbg);
+  border: 1px solid var(--stylish-border);
+  .integration-handler {
+    background-color: var(--stylish-contentbg);
+    border: 1px solid var(--stylish-border);
+  }
+  a {
+    background-color: var(--stylish-contentbg);
+    border: 1px solid var(--stylish-border);
+
+    &:hover {
+      background-color: var(--stylish-contentbg);
+      border: 1px solid var(--stylish-border);
+    }
+  }
+}
+
+// Editor
+.elements-pane,
+.options-pane {
+  background-color: var(--stylish-contentbg);
+}
+
+.editor-header,
+.builder-header {
+  background-color: var(--stylish-pagebg);
+}
+
+.editor-header-button-label,
+.editor-header-dropdown-label,
+.vector-logo {
+  background-color: var(--stylish-pagebg);
+  color: var(--stylish-white);
+  path: var(--stylish-white);
+}
+
+.lp-editor,
+.primary-toolbar,
+.editor-divider {
+  background-color: var(--stylish-contentbg);
+}
+
+#page-content-panel h1 {
+  background-color: var(--stylish-pagebg);
+  color: var(--stylish-brightwhite);
+}
+
+.editor-content-tree,
+.content-tree-node,
+.content-tree-node-visibility-state,
+.options-panel-view-pane,
+.options-panel-title {
+  border-color: var(--stylish-medblack);
+}
+
+.content-tree-node-wrapper {
+  color: var(--stylish-white);
+}
+
+.editor-content-tree-group-list-item.lp-hidden,
+.editor-content-tree-group-list-item.lp-hidden .content-tree-node-wrapper {
+  color: var(--stylish-brightblack);
+}
