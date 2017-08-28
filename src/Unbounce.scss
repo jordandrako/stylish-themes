@@ -248,6 +248,20 @@ header {
   fill: var(--stylish-blue);
 }
 
+.alert,
+.well.blue,
+.blue-bg {
+  background-color: var(--stylish-yellow);
+}
+
+.alert h3,
+.alert h4,
+.alert.color-text,
+.status.alert,
+.blue-text {
+  color: var(--stylish-black);
+}
+
 #section-content {
   background: var(--stylish-contentbg);
 
@@ -681,8 +695,97 @@ table.variants-set {
 .editor-header-dropdown-label,
 .vector-logo {
   background-color: var(--stylish-pagebg);
+  color: var(--stylish-text);
+  path: var(--stylish-text);
+
+  &:hover {
+    background-color: var(--stylish-active);
+    color: var(--styish-text-hover);
+    path: var(--styish-text-hover);
+  }
+}
+
+.action {
+  background-color: var(--stylish-blue);
+  color: var(--stylish-black);
+
+  &:hover:not(.dsbl) {
+    background-color: var(--stylish-green);
+    color: var(--stylish-black);
+  }
+}
+
+.save-button-container .dsbl,
+.republish-button-container .dsbl {
+  background-color: var(--stylish-brightblack);
   color: var(--stylish-white);
-  path: var(--stylish-white);
+
+  &:hover {
+    color: var(--stylish-white);
+  }
+}
+
+.editor-info-panel .tab-bar,
+.page-tabs-tab-bar {
+  border-color: var(--stylish-border);
+  background-color: var(--stylish-pagebg);
+}
+
+.editor-header-dropdown-list .headings,
+.editor-header-dropdown-list .bottom-button {
+  background-color: var(--stylish-pagebg);
+}
+
+.tab-bar-tab,
+.tab-bar-tab .tab-button,
+.settings-bar-menu-label,
+.tab-lightbox-menu-item {
+  color: var(--stylish-text-hover);
+  border-color: var(--stylish-border);
+}
+
+.tab-bar-tab.on,
+.tab-bar-tab.on .tab-button,
+.tab-lightbox-menu-item.on {
+  color: var(--stylish-text-hover);
+  background-color: var(--stylish-active);
+}
+
+.tab-bar-dropdown,
+.tab-lightbox-menu .tab-lightbox-menu-items,
+.tab-bar-settings-menu {
+  background-color: var(--stylish-pagebg);
+}
+
+.collapsible-panel-title-bar,
+.collapsible-panel-arrow-title-bar {
+  color: var(--stylish-text-hover);
+  background: var(--stylish-active);
+  border-color: var(--stylish-border);
+}
+
+.form-elm-mini-label,
+.select2-container .select2-choice div b {
+  background-color: var(--stylish-pagebg);
+  color: var(--stylish-text);
+}
+
+.form-elm-input-text,
+.form-elm-contenteditable,
+.input-field input,
+.select2-container .select2-choice,
+.dropdown-container .dropdown-choice {
+  background-color: var(--stylish-active);
+  color: var(--stylish-text);
+}
+
+.widget-panel,
+.footer-controls {
+  background-color: var(--stylish-black);
+}
+
+.wgt-color-primary {
+  fill: var(--stylish-brightblack);
 }
 
 .lp-editor,
@@ -711,4 +814,18 @@ table.variants-set {
 .editor-content-tree-group-list-item.lp-hidden,
 .editor-content-tree-group-list-item.lp-hidden .content-tree-node-wrapper {
   color: var(--stylish-brightblack);
+}
+
+.footer-control-button,
+.footer-control-button a,
+.tab-bar-tab.footer-control-button {
+  color: var(--stylish-text);
+  border-color: var(--stylish-border);
+}
+
+.footer-control-button.active,
+.footer-control-button.active:hover {
+  color: var(--stylish-text);
+  background: var(--stylish-active);
+  border-color: var(--stylish-border);
 }
