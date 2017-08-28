@@ -542,6 +542,25 @@ table.variants-set {
   border-bottom: none;
   border-top: 1px solid var(--stylish-border);
 
+  .no-variants-message {
+    background: var(--stylish-contentbg);
+    border-color: var(--stylish-border);
+    color: var(--stylish-text);
+
+    strong {
+      color: var(--stylish-text-hover);
+    }
+
+    .buttons {
+      button,
+      a {
+        background: var(--stylish-active);
+        border-color: var(--stylish-border);
+        color: var(--stylish-text);
+      }
+    }
+  }
+
   thead.variants-heading {
     box-shadow: none;
     background: var(--stylish-contentbg);
@@ -583,6 +602,11 @@ table.variants-set {
             color: inherit;
           }
         }
+      }
+
+      td.variant-weight,
+      td.variant-views {
+        color: var(--stylish-text);
       }
 
       td.variant-conversion-rate span.delta.down {
