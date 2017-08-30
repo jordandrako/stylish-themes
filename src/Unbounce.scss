@@ -285,7 +285,7 @@ header {
       color: var(--stylish-text-hover);
     }
   }
-  a:not([class~='btn']) {
+  a:not([class~="btn"]) {
     color: var(--stylish-text);
     &:hover {
       color: var(--stylish-text-hover);
@@ -480,7 +480,7 @@ header {
 .dynamic-text-dialog .data-list.formContainer .text {
   color: var(--stylish-text);
 
-  a:not([class~='btn']) {
+  a:not([class~="btn"]) {
     color: var(--stylish-blue);
   }
 }
@@ -828,4 +828,11 @@ table.variants-set {
   color: var(--stylish-text);
   background: var(--stylish-active);
   border-color: var(--stylish-border);
+}
+
+// Misc
+.notification-page p strong,
+.page-details > .service-not-available p strong,
+.page-details .loading-message p strong {
+  color: var(--stylish-text-hover);
 }
